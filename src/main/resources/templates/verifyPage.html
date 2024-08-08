@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>
+		Welcome To Front End Application
+	</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+		</script>
+
+</head>
+
+<body>
+	<div class="container">
+		<h2 class="text-center">
+			Thankyou for signing in, Please Verify yourself.
+		</h2>
+
+		<div class="row">
+			<div class="col bg-warning 
+                        text-center ">
+				<a th:href="@{'http://localhost:8080/verify/' + ${id}}" class="btn btn-outline-primary">Click to
+					Verify</a>
+
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
